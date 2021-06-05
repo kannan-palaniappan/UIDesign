@@ -1,0 +1,137 @@
+body{
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.wrapper
+{
+    display: grid;
+    height:100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:.4fr 2fr;
+
+    grid-template-areas: "nav login"
+                         "main side ";
+    grid-gap:0.2rem;
+
+    
+    
+    /* grid-auto-rows: minmax(100px,auto);  */
+   
+}
+
+
+
+.box1{
+
+   
+    grid-area:nav;
+}
+
+.box2{
+    
+    grid-area:login;
+}
+
+.box3{
+
+  
+    grid-area:main;
+}
+.box4{
+   
+    grid-area:side;
+}
+
+
+ .wrapper > div{
+
+    
+     padding:1rem; 
+}
+
+ 
+
+
+
+
+.box2 a{
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 18px;
+    color:black;
+    background-color: #FFC200;
+    display: inline-block;
+    border: none;
+    margin: 10px 10px;
+    font-weight: bold;
+
+
+}
+
+input[type=email],input[type=password]{
+    width:50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+   
+    
+   
+}
+
+
+button{
+    background-color: #FFC200;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.account{
+    text-align:center;
+}
+
+.box4  h1,p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.box4 h1{
+    color:#7EBAD2;
+}
+
+form{
+    text-align: center;
+}
+
+.box2
+{
+   text-align: center;
+  
+}
+
+
+@media only screen and (max-width:1200px) {
+   
+.wrapper{
+        grid-template-columns: 1fr;
+        grid-template-rows: .4fr .4fr 2fr 2fr;
+
+        text-align: center;
+
+        grid-template-areas: "nav"
+                              "login"
+                              "main"
+                              "side";
+}
+
+}  
